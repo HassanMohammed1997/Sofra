@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.homeCycle.viewPagerFragments.CommentsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/custom_shape_white"
+        android:id="@+id/comment_layout"
+        android:elevation="@dimen/standard_elev"
+        android:layout_margin="@dimen/dimen_8"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_24"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dimen_32"
+            android:text="@string/comments_share_text"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/comments_fragment_btn_add_comment"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="@string/add_comment_button"
+            android:drawableTint="@color/colorWhite"
+            android:layout_marginBottom="@dimen/dimen_16"
+            android:background="@color/colorYellow"
+            android:textColor="@color/colorWhite"
+            android:padding="@dimen/dimen_4"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_24"
+            android:drawableStart="@drawable/ic_stars_black_24dp" />
+        
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_8"
+        android:id="@+id/comments_fragments_RV_reviews"/>
+
+
+
+
+</LinearLayout>

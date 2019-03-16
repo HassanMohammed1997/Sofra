@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.homeCycle.navigations.UserOrderFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame_layout"
+        android:elevation="@dimen/standard_elev"
+        android:layout_margin="@dimen/dimen_8"
+        android:background="@drawable/custom_shape_white">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/user_order_fragment_tabs_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/standard_elev"
+            android:layout_margin="@dimen/dimen_8"
+            app:tabGravity="fill"
+            app:tabMode="fixed">
+
+
+        </android.support.design.widget.TabLayout>
+
+    </FrameLayout>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/user_order_fragment_vp_show_orders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/frame_layout"
+        android:layout_margin="@dimen/dimen_8">
+
+    </android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>

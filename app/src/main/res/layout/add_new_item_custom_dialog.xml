@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_16"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        style="@style/EditTextStyle"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:hint="@string/item_name_string"
+        android:id="@+id/items_name_et" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100"
+        style="@style/EditTextStyle"
+        android:layout_below="@id/items_name_et"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:hint="@string/item_description_string"
+        android:id="@+id/items_description_et" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        style="@style/EditTextStyle"
+        android:layout_below="@id/items_description_et"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:hint="@string/price_text"
+        android:id="@+id/items_price_et" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        style="@style/EditTextStyle"
+        android:layout_below="@id/items_price_et"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:hint="@string/duration_time_string"
+        android:id="@+id/item_duration_time_et" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_32"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:id="@+id/layout"
+        android:layout_below="@id/item_duration_time_et"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_picture"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/text_24"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="@dimen/dimen_100"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:id="@+id/item_image_iv"
+            android:src="@drawable/ic_add_image"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:background="@drawable/custom_shape_green"
+        android:text="@string/add_new_item"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_24"
+        android:layout_below="@id/layout"
+        android:id="@+id/add_item_btn"/>
+
+
+
+
+</RelativeLayout>

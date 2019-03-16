@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/register_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/name_edit_text"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/dimen_32"
+                android:hint="@string/user_name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/email_edit_text"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_below="@id/name_edit_text"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/user_phone_edit_text"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_below="@id/email_edit_text"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:hint="@string/phone" />
+
+            <Spinner
+                android:id="@+id/city_spinner"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_below="@id/user_phone_edit_text"
+                android:layout_marginTop="@dimen/dimen_8" />
+
+            <Spinner
+                android:id="@+id/state_spinner"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_below="@id/city_spinner"
+                android:layout_marginTop="@dimen/dimen_8" />
+
+            <EditText
+                android:id="@+id/description_edit_text"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_below="@id/state_spinner"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:hint="@string/details" />
+
+            <EditText
+                android:id="@+id/pass_edit_text"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_below="@id/description_edit_text"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:hint="@string/password" />
+
+            <EditText
+                android:id="@+id/repeat_pass_edit_text"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_below="@id/pass_edit_text"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:hint="@string/repeat_pass" />
+
+            <Button
+                android:id="@+id/next_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/repeat_pass_edit_text"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:background="@color/colorGreen"
+                android:text="@string/next"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_16" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

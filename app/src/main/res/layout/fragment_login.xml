@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.userCycle.LoginFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_32"
+        android:drawableEnd="@drawable/ic_person_black_24dp"
+        android:drawablePadding="@dimen/dimen_16"
+        android:drawableTint="@color/colorYellow"
+        android:gravity="center"
+        android:text="@string/sign_in_text"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_16" />
+
+    <EditText
+        android:id="@+id/email_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:background="@drawable/custom_shape_white"
+        android:hint="@string/email" />
+
+    <EditText
+        android:id="@+id/pass_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:background="@drawable/custom_shape_white"
+        android:hint="@string/password" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_32"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:background="@drawable/custom_shape_green"
+        android:text="@string/login_text"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/forget_pass_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_32"
+        android:gravity="center"
+        android:text="@string/forget_password"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_16" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginEnd="@dimen/dimen_16"
+        android:background="@drawable/custom_shape_yellow"
+        android:text="@string/register_button_text" />
+
+
+</LinearLayout>

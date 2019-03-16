@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.homeCycle.cart.CartListFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cart_list_fragment_rv_allCarts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/cart_list_fragment_tv_total"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginBottom="@dimen/dimen_8" />
+
+    <TextView
+        android:id="@+id/cart_list_fragment_tv_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:alpha="0.5"
+        android:background="@color/colorGray"
+        android:padding="@dimen/dimen_16"
+        android:text="@string/total_price"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/cart_list_fragment_btn_complete_order"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:layout_weight="1"
+            android:background="@drawable/custom_shape_green"
+            android:text="@string/complete_order"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/cart_list_fragment_btn_add_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:layout_weight="1"
+            android:background="@drawable/custom_shape_yellow"
+            android:text="@string/add_more" />
+
+    </LinearLayout>
+
+    <!--<Button-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/cart_list_fragment_btn_order"-->
+    <!--android:layout_marginBottom="@dimen/dimen_8"-->
+    <!--android:layout_marginStart="@dimen/dimen_8"-->
+    <!--android:layout_marginEnd="@dimen/dimen_8"-->
+    <!--android:layout_marginTop="@dimen/dimen_8"-->
+    <!--android:layout_alignParentBottom="true" />-->
+
+
+</RelativeLayout>

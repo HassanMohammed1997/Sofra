@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.homeCycle.navigations.ItemsFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/items_fragment_Rv_display_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/items_fragment_Btn_add_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginStart="@dimen/dimen_32"
+        android:layout_marginEnd="@dimen/dimen_32"
+        android:layout_marginBottom="@dimen/dimen_32"
+        android:background="@color/colorGray"
+        android:text="@string/add_new_item_string"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/text_24" />
+
+
+</RelativeLayout>

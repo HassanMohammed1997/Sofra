@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/continue_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.internship.ipda3.semicolon.sofra.util.MultiSelectionSpinner
+        android:id="@+id/categories_spinner"
+        style="@style/Widget.AppCompat.Spinner.DropDown"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_16" />
+
+    <EditText
+        android:id="@+id/minimum_order_edit_text"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_below="@id/categories_spinner"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:hint="@string/minimum_order_text" />
+
+
+    <EditText
+        android:id="@+id/delivery_fee_edit_text"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_below="@id/minimum_order_edit_text"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:hint="@string/delivery_fee_text" />
+
+    <CheckBox
+        android:id="@+id/delivery_data_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delivery_fee_edit_text"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:checked="true"
+        android:text="@string/delivery_data_text" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delivery_data_check_box"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/restaurant_phone_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:hint="@string/phone" />
+
+
+        <EditText
+            android:id="@+id/whats_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:hint="@string/whatsapp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/restaurent_image"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/restaurant_image"
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="@dimen/dimen_100"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:scaleType="fitXY"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_add_image" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_2"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_32"
+        android:layout_marginEnd="@dimen/dimen_8"
+
+        android:background="@drawable/custom_shape_green"
+        android:text="@string/register"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_16" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_layout"
+        android:background="@drawable/circle_drawable"
+        android:elevation="@dimen/standard_elev"
+        android:visibility="gone"
+        android:layout_centerInParent="true">
+
+        <ProgressBar
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_50" />
+    </FrameLayout>
+
+
+
+</RelativeLayout>

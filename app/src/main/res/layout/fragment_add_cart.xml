@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.homeCycle.cart.AddCartFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/add_cart_fragment_iv_display_food_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_200"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/add_cart_fragment_tv_display_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_cart_fragment_iv_display_food_image"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:text="Est lotus poeta, cesaris."
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/add_cart_fragment_tv_display_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_cart_fragment_tv_display_name"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:ems="11"
+            android:text="Chicken lard can be seasoned with nutty peanuts, also try covering the casserole with teriyaki." />
+
+        <TextView
+            android:id="@+id/price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_cart_fragment_iv_display_food_image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:text="@string/price_text"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/add_cart_fragment_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price_tv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:text="@string/price_50_text" />
+
+        <View
+            android:id="@+id/divider_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_1"
+            android:layout_below="@id/add_cart_fragment_tv_display_details"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_32"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:alpha="0.3"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:id="@+id/add_cart_fragment_tv_duration_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider_1"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/text_16"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:text="@string/duration_text"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_1"
+            android:layout_below="@id/add_cart_fragment_tv_duration_time"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:alpha="0.3"
+            android:background="@color/colorGray" />
+
+        <TextView
+            android:id="@+id/special_order_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider_2"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:text="@string/special_order_text"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_cart_fragment_et_special_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100"
+            android:layout_below="@id/special_order_tv"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:background="@drawable/custom_shape_white"
+            android:elevation="@dimen/standard_elev" />
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/add_cart_fragment_btn_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_cart_fragment_et_special_order"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_32"
+            android:layout_marginEnd="@dimen/dimen_8"
+            app:backGroundColor="@color/colorGreen"
+            app:initialNumber="1" />
+
+        <Button
+            android:id="@+id/add_cart_fragment_btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_cart_fragment_btn_counter"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_32"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:background="@color/colorYellow"
+            android:drawableStart="@drawable/ic_shopping_basket_black_24dp"
+            android:paddingStart="@dimen/dimen_32"
+            android:text="@string/add_to_cart_string"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

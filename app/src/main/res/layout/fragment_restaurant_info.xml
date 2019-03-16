@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.fragment.homeCycle.viewPagerFragments.RestaurantInfoFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_32"
+                    android:layout_marginEnd="@dimen/dimen_8"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="@string/status_string"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/state_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_32"
+                    android:layout_marginBottom="@dimen/dimen_8"
+                    android:checked="true"
+                    android:gravity="start"
+                    android:thumbTint="@color/colorGreen" />
+
+
+                <TextView
+                    android:id="@+id/restaurant_info_fragment_tv_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_32"
+                    android:layout_marginEnd="@dimen/dimen_8"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="@string/status_string"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_32"
+                    android:layout_marginEnd="@dimen/dimen_8"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/city_string"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/restaurant_info_tv_city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_32"
+                    android:layout_marginEnd="@dimen/dimen_8"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="@string/status_string"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_32"
+                    android:layout_marginEnd="@dimen/dimen_8"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/region_text"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/restaurant_info_fragment_tv_region"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_32"
+                    android:layout_marginEnd="@dimen/dimen_8"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="@string/status_string"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_32"
+                    android:layout_marginEnd="@dimen/dimen_8"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/minimum_order_text"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/restaurant_info_fragment_tv_min"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_32"
+                    android:layout_marginEnd="@dimen/dimen_8"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="@string/status_string"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_32"
+                    android:layout_marginEnd="@dimen/dimen_8"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/delivery_fee_text"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/restaurant_info_fragment_tv_delivery_cost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_32"
+                    android:layout_marginEnd="@dimen/dimen_8"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="@string/status_string"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:background="@color/colorBlack" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/restaurant_info_fragment_btn_save"
+                android:layout_marginTop="@dimen/dimen_32"
+                android:layout_marginEnd="@dimen/dimen_8"
+                android:layout_marginStart="@dimen/dimen_8"
+                android:background="@drawable/custom_shape_green"
+                android:textSize="@dimen/text_24"
+                android:textColor="@color/colorWhite"
+                android:text = "@string/save"/>
+
+        </LinearLayout>
+</ScrollView>
