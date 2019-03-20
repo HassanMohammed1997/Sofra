@@ -136,7 +136,7 @@ public class RestaurantDetailsFragment extends Fragment {
                                 Long rate = data.getRate();
                                 String deliveryCost = data.getDeliveryCost();
                                 String availability = data.getAvailability();
-                                String photoUrl = data.getPhotoUrl();
+                                String photoUrl = "http://ipda3.com/sofra/" + data.getPhoto();
                                 String minimumCharger = data.getMinimumCharger();
 
                                 Glide.with(getActivity()).load(photoUrl).into(restaurantImageView);

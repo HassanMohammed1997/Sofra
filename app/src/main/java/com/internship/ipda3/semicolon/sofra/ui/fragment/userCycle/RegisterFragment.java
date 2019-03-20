@@ -210,7 +210,6 @@ public class RegisterFragment extends Fragment {
                                 categoriesSpinner.setItems(categoryType);
 
 
-
                             }
 
                         }
@@ -451,7 +450,6 @@ public class RegisterFragment extends Fragment {
             imagePart = convertFileToMultipart(path, "photo");
 
 
-            verbose("image part: " + imagePart);
         }
     }
 
@@ -468,7 +466,6 @@ public class RegisterFragment extends Fragment {
 
         List<String> selectedStrings = categoriesSpinner.getSelectedStrings();
         RequestBody regionId = convertStringToRequestBody(String.valueOf(selectedRegionId));
-
 
 
         categories.add(convertStringToRequestBody("1"));

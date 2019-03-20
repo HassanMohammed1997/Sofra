@@ -79,7 +79,7 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.Vi
         viewHolder.minOrderTv.setText(data.getMinimumCharger());
         viewHolder.ratingBarIv.setRating(data.getRate().floatValue());
 //        viewHolder.restaurantCategoriesTv.setText(data.getCategories().iterator().next().getName());
-        Glide.with(context).load(data.getPhotoUrl()).into(viewHolder.restaurantImageView);
+        Glide.with(context).load("http://ipda3.com/sofra/" + data.getPhoto()).into(viewHolder.restaurantImageView);
 
 
     }

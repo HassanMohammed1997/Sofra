@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.fragment.homeCycle.navigations.offers.AddOfferFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_8">
+
+        <EditText
+            android:id="@+id/add_offer_fragment_et_offerName"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:hint="@string/offer_name_string"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8" />
+
+        <EditText
+            android:id="@+id/add_offer_fragment_et_offerDesc"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100"
+            android:layout_below="@id/add_offer_fragment_et_offerName"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:hint="@string/item_description_string"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8" />
+
+        <EditText
+            android:id="@+id/add_offer_fragment_et_offerPrice"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_below="@id/add_offer_fragment_et_offerDesc"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:hint="@string/price_text"
+            android:paddingStart="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_8" />
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_offer_fragment_et_offerPrice"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <EditText
+                android:id="@+id/add_offer_fragment_et_from"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_weight="1"
+                android:hint="@string/starting_from"
+                android:paddingStart="@dimen/dimen_8"
+                android:paddingEnd="@dimen/dimen_8" />
+
+            <EditText
+                android:id="@+id/add_offer_fragment_et_to"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:layout_weight="1"
+                android:hint="@string/ending_at"
+                android:paddingStart="@dimen/dimen_8"
+                android:paddingEnd="@dimen/dimen_8" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:text="@string/offer_photo_string"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/add_offer_fragment_iv_offerImage"
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="@dimen/dimen_100"
+            android:layout_below="@id/layout"
+            android:layout_marginStart="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_marginEnd="@dimen/dimen_8"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:layout_toEndOf="@id/photo"
+            android:src="@drawable/ic_add_image" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_offer_fragment_iv_offerImage"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/add_offer_fragment_btn_addOffer"
+            android:background="@drawable/custom_shape_green"
+            android:text="@string/add_string"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_16" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

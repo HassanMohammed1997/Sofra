@@ -20,6 +20,7 @@ import com.internship.ipda3.semicolon.sofra.ui.fragment.homeCycle.RestaurantDeta
 import com.internship.ipda3.semicolon.sofra.ui.fragment.homeCycle.RestaurantFragment;
 import com.internship.ipda3.semicolon.sofra.ui.fragment.homeCycle.navigations.ItemsFragment;
 import com.internship.ipda3.semicolon.sofra.ui.fragment.homeCycle.navigations.UserOrderFragment;
+import com.internship.ipda3.semicolon.sofra.ui.fragment.homeCycle.navigations.offers.OffersListFragment;
 import com.internship.ipda3.semicolon.sofra.ui.fragment.userCycle.LoginFragment;
 
 import static com.internship.ipda3.semicolon.sofra.Constants.SharedPreferenceKeys.API_TOKEN;
@@ -147,6 +148,9 @@ public class HomeActivity extends AppCompatActivity
                 //TODO if restaurant, replace restaurant's notification.
                 replace(R.id.home_activity_frame, new UserOrderFragment(), getSupportFragmentManager());
                 break;
+            case R.id.nav_offers:
+                //TODO if user, replace new offers list fragment
+                replace(R.id.home_activity_frame, new OffersListFragment(), getSupportFragmentManager());
 
 
         }

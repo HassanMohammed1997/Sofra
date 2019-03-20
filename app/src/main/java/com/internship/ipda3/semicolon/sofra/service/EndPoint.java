@@ -1,12 +1,14 @@
 package com.internship.ipda3.semicolon.sofra.service;
 
 import com.internship.ipda3.semicolon.sofra.model.client.car.add.AddItemToCart;
+import com.internship.ipda3.semicolon.sofra.model.client.order.newOrder.NewOrder;
 import com.internship.ipda3.semicolon.sofra.model.client.order.orders.Orders;
 import com.internship.ipda3.semicolon.sofra.model.client.userCycle.login.UserLogin;
 import com.internship.ipda3.semicolon.sofra.model.client.userCycle.password.NewPassword;
 import com.internship.ipda3.semicolon.sofra.model.client.userCycle.register.UserRegister;
 import com.internship.ipda3.semicolon.sofra.model.general.categories.Catagory;
 import com.internship.ipda3.semicolon.sofra.model.general.city.City;
+import com.internship.ipda3.semicolon.sofra.model.general.offers.list.Offers;
 import com.internship.ipda3.semicolon.sofra.model.general.region.Region;
 import com.internship.ipda3.semicolon.sofra.model.general.restaurant.Restaurant;
 import com.internship.ipda3.semicolon.sofra.model.general.restaurant.details.RestaurantDetails;
@@ -16,6 +18,8 @@ import com.internship.ipda3.semicolon.sofra.model.restaurent.changeState.ChangeS
 import com.internship.ipda3.semicolon.sofra.model.restaurent.items.delete.Delete;
 import com.internship.ipda3.semicolon.sofra.model.restaurent.items.newItem.NewItem;
 import com.internship.ipda3.semicolon.sofra.model.restaurent.login.RestaurantLogin;
+import com.internship.ipda3.semicolon.sofra.model.restaurent.offer.list.OfferList;
+import com.internship.ipda3.semicolon.sofra.model.restaurent.offer.newOffer.NewOffer;
 import com.internship.ipda3.semicolon.sofra.model.restaurent.register.RestaurantRegister;
 
 import java.util.List;
@@ -214,9 +218,32 @@ public interface EndPoint {
                             @Part("item_id")
                                     RequestBody itemId);
 
-  
+    @POST("client/new-order")
+    @FormUrlEncoded
+    Call<NewOrder> createNewOrder(@Field("restaurant_id") String restaurant_id, @Field("note") String note, @Field("payment_method_id") int payment_method_id,
+                                  @Field("phone") String phone, @Field("name") String name, @Field("api_token") String api_token, @Field("items[0]") List<String> items, @Field("quantities[0]") List<Integer> quantities, @Field("notes[0]") List<String> notes);
 
+    @GET("offers")
+    Call<Offers> getOffers(@Query("page") int page);
 
+    @POST("restaurant/new-offer")
+    @Multipart
+    Call<NewOffer> newOffer(@Part("description")
+                                    RequestBody description,
+                            @Part("price")
+                                    RequestBody price,
+                            @Part("starting_at")
+                                    RequestBody starting_at,
+                            @Part("name")
+                                    RequestBody name,
+                            @Part MultipartBody.Part photo,
+                            @Part("ending_at")
+                                    RequestBody ending_at,
+                            @Part("api_token")
+                                    RequestBody api_token);
+
+    @GET("restaurant/my-offers")
+    Call<OfferList> getRestaurantOffer(@Query("api_token")String api_token, @Query("page")int page);
 
 
 }

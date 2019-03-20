@@ -30,8 +30,8 @@ public class RestaurantDatum {
     private String mPhone;
     @SerializedName("photo")
     private String mPhoto;
-    @SerializedName("photo_url")
-    private String mPhotoUrl;
+/*    @SerializedName("photo_url")
+    private String mPhotoUrl;*/
     @SerializedName("rate")
     private Long mRate;
     @SerializedName("region")
@@ -131,13 +131,13 @@ public class RestaurantDatum {
         mPhoto = photo;
     }
 
-    public String getPhotoUrl() {
+ /*   public String getPhotoUrl() {
         return mPhotoUrl;
     }
 
     public void setPhotoUrl(String photoUrl) {
         mPhotoUrl = photoUrl;
-    }
+    }*/
 
     public Long getRate() {
         return mRate;

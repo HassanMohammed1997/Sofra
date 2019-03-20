@@ -118,4 +118,12 @@
     <string name="complete_order">تنفيد الطلب</string>
     <string name="add_more">إضافة المزيد</string>
     <string name="reyal">ريال</string>
+    <string name="dummy_text">Try pressing noodles soup.</string>
+    <string name="add_offer_string">إضافة عرض جديد</string>
+    <string name="offer_photo_string">إضافة صورة للعرض</string>
+    <string name="add_string">أضف</string>
+    <string name="offer_name_string">اسم العرض</string>
+    <string name="starting_from">المدة من</string>
+    <string name="ending_at">المدة إلى</string>
+    <string name="no_offers">لا يوجد عروض. أضف عرض جديد.</string>
 </resources>
